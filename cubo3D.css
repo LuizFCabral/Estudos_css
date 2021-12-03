@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Balsamiq Sans", cursive;
 }
 
 body{
@@ -74,4 +75,31 @@ body{
     0 0 300px rgba(0,255,0,0.6),
     0 0 400px rgba(0,255,0,0.8),
     0 0 500px rgba(0,255,0,1);
+}
+
+.text{
+    font-size: 1.5rem;
+    color: #0f0;
+    position: absolute;
+    top: 20px;
+    justify-self: center;
+
+    text-shadow: 0 0 0.5em currentColor;
+}
+
+.voltar{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+.voltar form{
+    width: 100%;
+    height: 100%;
+}
+.voltar form button{
+    width: 100%;
+    height: 100%;
 }
