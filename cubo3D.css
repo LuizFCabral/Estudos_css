@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Balsamiq Sans", cursive;
+    font-family: arial;
 }
 
 body{
@@ -77,14 +77,41 @@ body{
     0 0 500px rgba(0,255,0,1);
 }
 
-.text{
+h2{
     font-size: 1.5rem;
-    color: #0f0;
+    color: rgb(46, 49, 46);
     position: absolute;
     top: 20px;
     justify-self: center;
-
     text-shadow: 0 0 0.5em currentColor;
+    text-transform: uppercase;
+    -webkit-box-reflect: below -8px linear-gradient(transparent,#0004);
+}
+h2 span:hover{
+    animation: animate2 6s linear infinite;
+}
+h2 span:nth-child(even){
+    animation-delay: 0.4s;
+}
+@keyframes animate2{
+    0%,10%{
+        color: rgb(46, 49, 46);
+        text-shadow: none;
+    }
+    50%{
+        color: #0f0;
+        text-shadow: 0 0 10px #26f726,
+        0 0 20px #26f726,
+        0 0 40px #26f726,
+        0 0 80px #26f726,
+        0 0 160px #26f726,
+        0 0 400px #26f726;
+        animation-play-state: paused;
+    }
+    100%{
+        color: rgb(46, 49, 46);
+        text-shadow: none;
+    }
 }
 
 .voltar{
