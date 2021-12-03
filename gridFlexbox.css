@@ -1,3 +1,10 @@
+:root{
+    --clrHeader: #1d1e20;
+}
+
+
+
+
 body, ul, li p{
     margin: 0px;
     padding: 0px;
@@ -26,12 +33,19 @@ img{
 }
 
 .header{
-    background: #1d1e20;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--clrHeader);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
     padding: 20px;
+}
+
+.header nav{
+    margin-right: 40px;
 }
 
 .menu{
@@ -41,9 +55,62 @@ img{
 .menu li{
     margin-left: 10px;
 }
-menu li a{
+
+.menu li a{
     display: block;
     padding: 10px;
+}
+.header ul div{
+    position: absolute;
+    background: var(--clrHeader);
+    color: white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+.header ul div:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:-10px;
+    background: var(--clrHeader);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.dbSobreSite{
+    right: 255px;
+    top: 100px;
+    opacity: 0;
+}
+.dbSobreDev{
+    right: 125px;
+    top: 100px;
+    opacity: 0;
+}
+.dbContatos{
+    right: 60px;
+    top: 100px;
+    opacity: 0;
+    width: 230px;
+}
+.dbContatos:before{
+    right: 35px;
+}
+
+.header ul #sobreSite:hover ~ .dbSobreSite{
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.header ul #sobreDev:hover ~ .dbSobreDev{
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.header ul #contatos:hover ~ .dbContatos{
+    transition: all 0.5s ease;
+    opacity: 1;
 }
 
 /* CSS FLEXBOX 1 */
@@ -141,14 +208,14 @@ menu li a{
     grid-row: 1 / 3;
 
 }
-.grid3-item{
-    display: grid;
-}
 
 .grid3-item img{
     grid-column: 1;
     grid-row: 1 / 3;
     align-self: end;
+}
+.grid3-item{
+    display: grid;
 }
 
 .grid3-item p{
