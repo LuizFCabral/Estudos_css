@@ -1,0 +1,38 @@
+
+
+body{
+    font-size: 1.2rem;
+    font-family: arial;
+}
+
+.header{
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.links{
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.links > form{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.links form button{
+    min-height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links form img{
+    max-width: 400px;
+    border-radius: 5px;
+}
