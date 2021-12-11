@@ -22,7 +22,8 @@ body{
 }
 
 .links > form{
-    flex: 1 1 200px;
+    display: flex;
+    flex: 1 1 auto;
     margin: 10px;
 }
 
@@ -30,6 +31,7 @@ body{
     min-height: 350px;
     padding: 10px;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
 .links form img{
